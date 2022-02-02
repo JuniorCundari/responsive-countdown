@@ -1,6 +1,6 @@
 # Desafio Countdown
 
-## [Click aqui para visitar a página!]()
+## [Click aqui para visitar a página!](https://juniorcundari.github.io/responsive-countdown/)
 
 <p align="center">
   <img alt="Desktop" src="./assets/desktop.png" width="100%">
