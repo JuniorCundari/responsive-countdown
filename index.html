@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Countdown</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <img src="./assets/top-image.svg" alt="Imagem de Cabeçalho" />
+        <div class="container">
+          <div class="toggle">
+            <input type="checkbox" id="switch" name="theme" />
+            <label for="switch">
+              <img src="./assets/moon.svg" alt="Noite" />
+              <img src="./assets/sun.svg" alt="Dia" />
+            </label>
+          </div>
+        </div>
+      </header>
+
+      <section>
+        <div id="container">
+          <h1>READY TO LAUNCH IN...</h1>
+          <div id="countdown-container">
+            <div class="countdown days">
+              <span>Dias</span>
+              <p class="text" id="days">00</p>
+            </div>
+            <div class="countdown hours">
+              <span>Horas</span>
+              <p class="text" id="hours">00</p>
+            </div>
+            <div class="countdown minutes">
+              <span>Minutos</span>
+              <p class="text" id="minutes">00</p>
+            </div>
+            <div class="countdown seconds">
+              <span>Segundos</span>
+              <p class="text" id="seconds">00</p>
+            </div>
+          </div>
+          <div id="container-text-button">
+            <p>Inscreva-se para saber mais sobre o lançamento</p>
+            <button type="button" id="signUpButton" onclick="signUp()">
+              Inscreva-se
+            </button>
+          </div>
+        </div>
+        <img src="./assets/rocket.svg" alt="Imagem Foguete" />
+      </section>
+
+      <footer>
+        <img src="./assets/bottom-image.svg" alt="Imagem de Rodapé" />
+      </footer>
+      <!----------------- Modal ----------------->
+      <div id="modal">
+        <div class="modal-content">
+          <span class="close-modal">&times;</span>
+          <h2>Inscreva-se</h2>
+          <hr />
+          <form action="">
+            <div id="form">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                value=""
+                placeholder="Nome"
+              /><br />
+              <input
+                type="text"
+                name="sobrenome"
+                id="sobrenome"
+                value=""
+                placeholder="Sobrenome"
+              /><br />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                value=""
+                placeholder="E-mail"
+                required
+              /><br />
+            </div>
+            <button>Enviar</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <script src="countdown.js"></script>
+    <script src="modal.js"></script>
+    <script src="switcher.js"></script>
+  </body>
+</html>
